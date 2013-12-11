@@ -13,3 +13,6 @@ E-Deposit AMQP middleware pro ISBN
    installation
 
 
+:download:`test report <../report.html>`
+
+:download:`test log <../log.html>`
