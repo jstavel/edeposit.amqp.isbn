@@ -1,0 +1,13 @@
+README.txt
+setup.py
+src/edeposit/__init__.py
+src/edeposit.amqp.isbn.egg-info/PKG-INFO
+src/edeposit.amqp.isbn.egg-info/SOURCES.txt
+src/edeposit.amqp.isbn.egg-info/dependency_links.txt
+src/edeposit.amqp.isbn.egg-info/entry_points.txt
+src/edeposit.amqp.isbn.egg-info/namespace_packages.txt
+src/edeposit.amqp.isbn.egg-info/not-zip-safe
+src/edeposit.amqp.isbn.egg-info/requires.txt
+src/edeposit.amqp.isbn.egg-info/top_level.txt
+src/edeposit/amqp/__init__.py
+src/edeposit/amqp/isbn/__init__.py
