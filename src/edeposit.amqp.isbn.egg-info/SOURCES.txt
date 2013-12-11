@@ -1,4 +1,3 @@
-README.txt
 setup.py
 src/edeposit/__init__.py
 src/edeposit.amqp.isbn.egg-info/PKG-INFO
@@ -11,3 +10,4 @@ src/edeposit.amqp.isbn.egg-info/requires.txt
 src/edeposit.amqp.isbn.egg-info/top_level.txt
 src/edeposit/amqp/__init__.py
 src/edeposit/amqp/isbn/__init__.py
+src/edeposit/amqp/isbn/tests/__init__.py

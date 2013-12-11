@@ -4,7 +4,7 @@ import os
 version = '0.1'
 
 long_description = (
-    open('README.txt').read()
+    open('README.md').read()
     + '\n' +
     'Contributors\n'
     '============\n'
@@ -38,6 +38,13 @@ setup(name='edeposit.amqp.isbn',
           # -*- Extra requirements: -*-
           'pyisbn',
       ],
+      extras_require={"test": [
+          "unittest2",
+          "robotsuite",
+      ], "docs": [
+          "sphinxcontrib-robotdoc",
+          "sphinx",
+      ]},
       entry_points="""
       # -*- Entry points: -*-
       """,

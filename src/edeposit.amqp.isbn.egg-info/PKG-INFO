@@ -2,25 +2,21 @@ Metadata-Version: 1.1
 Name: edeposit.amqp.isbn
 Version: 0.1
 Summary: E-Deposit AMQP middleware for ISBN checking
-Home-page: http://svn.plone.org/svn/collective/
+Home-page: https://github.com/jstavel/edeposit.amqp.isbn
 Author: UNKNOWN
 Author-email: UNKNOWN
 License: gpl
-Description: .. contents::
-        
-        Introduction
+Description: Introduction
         ============
         
+        This package provides an AMQP middleware for checking ISBNs.
+        
+        You can read [full documentation](http://edeposit-amqp-isbn.readthedocs.org/cs/latest/ "Full Documentation")
         
         Contributors
         ============
         
-        Note:  place names and roles of the people who contribute to this package
-               in this file, one to a line, like so:
-        
-        - Joe Schmoe, Original Author
-        - Bob Slob, contributed monkey patches
-        - Jane Main, wrote flibberty module
+        - Jan Stavěl, Original Author, Maintainer
         
         Changelog
         =========

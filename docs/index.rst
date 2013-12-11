@@ -10,4 +10,6 @@ E-Deposit AMQP middleware pro ISBN
    :maxdepth: 2
 
    requirements
+   installation
+
 

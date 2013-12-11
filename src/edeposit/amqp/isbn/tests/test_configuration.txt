@@ -1,0 +1,10 @@
+*** Settings ***
+
+*** Variables ***
+${ALEPH_URL}               http://aleph.nkp.cz/
+${ALEPH_URL_PRODUCENTS}    https://pypi.python.org/pypi/edeposit.amqp.isbn/
+
+*** Test Cases ***
+Test repozitáře
+    [Documentation]    Existuje konfigurace balíčku
+    Import Library     ${CURDIR}/../__init__.py

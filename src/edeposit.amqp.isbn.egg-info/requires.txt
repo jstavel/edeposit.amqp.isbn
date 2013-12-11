@@ -1,1 +1,10 @@
 setuptools
+pyisbn
+
+[test]
+unittest2
+robotsuite
+
+[docs]
+sphinxcontrib-robotdoc
+sphinx
