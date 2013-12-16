@@ -21,3 +21,13 @@ You can run them manually
 ... or continuously running using nosier:
 
     jan@jan-XPS-L421X:~/work/edeposit.amqp.isbn$ nosier -p src "pybot --pythonpath src/edeposit/amqp/isbn/tests/ src/edeposit/amqp/isbn/tests/"
+
+
+Status of acceptance tests
+--------------------------
+
+You can see results of tests at files 
+
+https://raw.github.com/jstavel/edeposit.amqp.isbn/master/log.html
+
+https://raw.github.com/jstavel/edeposit.amqp.isbn/master/report.html
