@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20131211 15:25:56.948" generator="Robot 2.8.3 (Python 2.7.5+ on linux2)">
+<robot generated="20131216 12:59:46.382" generator="Robot 2.8.3 (Python 2.7.5+ on linux2)">
 <suite source="/home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/tests" id="s1" name="Tests">
 <suite source="/home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/tests/test_configuration.txt" id="s1-s1" name="Test Configuration">
 <test id="s1-s1-t1" name="Test repozitáře">
-<kw type="kw" name="BuiltIn.Import Library">
-<doc>Imports a library with the given name and optional arguments.</doc>
+<kw type="kw" name="inspector.PythonModule.Has Variable">
+<doc></doc>
 <arguments>
-<arg>/home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/tests/../__init__.py</arg>
+<arg>"aleph_url"</arg>
 </arguments>
-<status status="PASS" endtime="20131211 15:25:56.971" starttime="20131211 15:25:56.971"></status>
+<msg timestamp="20131216 12:59:46.406" level="FAIL">module: "../settings.py" has no variable '"aleph_url"'</msg>
+<status status="FAIL" endtime="20131216 12:59:46.406" starttime="20131216 12:59:46.406"></status>
 </kw>
-<doc>Existuje konfigurace balíčku</doc>
+<doc>Existuje konfigurace balíčku a má správně pojmenované proměnné</doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20131211 15:25:56.972" critical="yes" starttime="20131211 15:25:56.970"></status>
+<status status="FAIL" endtime="20131216 12:59:46.407" critical="yes" starttime="20131216 12:59:46.405">module: "../settings.py" has no variable '"aleph_url"'</status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="PASS" endtime="20131211 15:25:56.972" starttime="20131211 15:25:56.968"></status>
+<status status="FAIL" endtime="20131216 12:59:46.407" starttime="20131216 12:59:46.402"></status>
 </suite>
 <suite source="/home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/tests/test_installation.txt" id="s1-s2" name="Test Installation">
 <test id="s1-s2-t1" name="Test repozitáře">
@@ -27,40 +28,39 @@
 <arguments>
 <arg>${PACKAGE_URL}</arg>
 </arguments>
-<msg timestamp="20131211 15:25:57.035" level="INFO">Host for next HTTP request set to 'pypi.python.org'</msg>
-<msg timestamp="20131211 15:25:57.035" level="INFO">Scheme for next HTTP request set to 'https'</msg>
-<msg timestamp="20131211 15:25:57.600" level="FAIL">Request should have succeeded, but was "404 Not Found ()".</msg>
-<status status="FAIL" endtime="20131211 15:25:57.600" starttime="20131211 15:25:57.034"></status>
+<msg timestamp="20131216 12:59:46.466" level="INFO">Host for next HTTP request set to 'pypi.python.org'</msg>
+<msg timestamp="20131216 12:59:46.466" level="INFO">Scheme for next HTTP request set to 'https'</msg>
+<msg timestamp="20131216 12:59:46.578" level="FAIL">Request should have succeeded, but was "404 Not Found ()".</msg>
+<status status="FAIL" endtime="20131216 12:59:46.579" starttime="20131216 12:59:46.466"></status>
 </kw>
 <doc>Existuje repozitář s balíčkem</doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20131211 15:25:57.601" critical="yes" starttime="20131211 15:25:57.034">Request should have succeeded, but was "404 Not Found ()".</status>
+<status status="FAIL" endtime="20131216 12:59:46.579" critical="yes" starttime="20131216 12:59:46.466">Request should have succeeded, but was "404 Not Found ()".</status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20131211 15:25:57.602" starttime="20131211 15:25:56.972"></status>
+<status status="FAIL" endtime="20131216 12:59:46.580" starttime="20131216 12:59:46.407"></status>
 </suite>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20131211 15:25:57.602" starttime="20131211 15:25:56.949"></status>
+<status status="FAIL" endtime="20131216 12:59:46.582" starttime="20131216 12:59:46.383"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="1">Critical Tests</stat>
-<stat fail="1" pass="1">All Tests</stat>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" pass="1" id="s1" name="Tests">Tests</stat>
-<stat fail="0" pass="1" id="s1-s1" name="Test Configuration">Tests.Test Configuration</stat>
+<stat fail="2" pass="0" id="s1" name="Tests">Tests</stat>
+<stat fail="1" pass="0" id="s1-s1" name="Test Configuration">Tests.Test Configuration</stat>
 <stat fail="1" pass="0" id="s1-s2" name="Test Installation">Tests.Test Installation</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20131211 15:25:56.971" level="WARN">Imported library '/home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/__init__.py' contains no keywords</msg>
 </errors>
 </robot>
