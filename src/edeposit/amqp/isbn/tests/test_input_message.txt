@@ -1,22 +1,18 @@
 *** Settings ***
-
-Library     inspector.PythonModule  src/edeposit/amqp/isbn/settings.py
-Library     OperatingSystem
+Metadata    name  "vstupní AMQP zprávy"
+Library     inspector.PythonModule  "../__init__.py"
 
 *** Variables ***
 ${ALEPH_URL}               http://aleph.nkp.cz/
 ${ALEPH_URL_PRODUCENTS}    https://pypi.python.org/pypi/edeposit.amqp.isbn/
 
 *** Test Cases ***
-Konfigurační soubor
-    Should Exist       src/edeposit/amqp/isbn/settings.py        
-
 Konfigurace k alephu
-    [Documentation]    aleph_url
+    [Documentation]    Konfigurace cesty k Alephu
     Has variable       aleph_url 
 
 Konfigurace pro vstupní exchange v RabbitMQ
-    [Documentation]    Jméno exchange   
+    [Documentation]    Jméno exchange
     Has variable       input_exchange
 
 Konfigurace pro exchange v RabbitMQ pro odpovědi

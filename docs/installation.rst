@@ -14,3 +14,8 @@ Modul je k dispozici na `centrálním repozitáři <https://pypi.python.org/pypi
 .. robot_keywords::
    :source: ../src/edeposit/amqp/isbn/tests/test_installation.txt
 
+.. code:
+
+   pip edeposit.amqp.isbn
+
+
