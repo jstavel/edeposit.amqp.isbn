@@ -12,9 +12,9 @@ Konfigurace k alephu
     Has variable       aleph_url 
 
 Konfigurace pro vstupní exchange v RabbitMQ
-    [Documentation]    Jméno exchange
+    [Documentation]    Jméno exchange, kam se budou posílat žádosti na validaci
     Has variable       input_exchange
 
 Konfigurace pro exchange v RabbitMQ pro odpovědi
-    [Documentation]    Jméno exchange
+    [Documentation]    Jméno exchange ve které se budou objevovat odpovědi
     Has variable       result_exchange

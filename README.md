@@ -20,7 +20,7 @@ You can run them manually
 
 ... or continuously running using nosier:
 
-    jan@jan-XPS-L421X:~/work/edeposit.amqp.isbn$ nosier -p src "pybot -W 100 --pythonpath src/edeposit/amqp/isbn/tests/ src/edeposit/amqp/isbn/tests/"
+    jan@jan-XPS-L421X:~/work/edeposit.amqp.isbn$ nosier -p src "pybot -W 100 --pythonpath src/edeposit/amqp/isbn/tests/ --pythonpath src src/edeposit/amqp/isbn/tests/"
 
 
 Status of acceptance tests

@@ -41,6 +41,8 @@ help:
 clean:
 	-rm -rf $(BUILDDIR)/*
 
+cleanhtml: clean html
+
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo

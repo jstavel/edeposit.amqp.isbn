@@ -11,14 +11,13 @@ ${ALEPH_URL_PRODUCENTS}    https://pypi.python.org/pypi/edeposit.amqp.isbn/
 Konfigurační soubor
     Should Exist       src/edeposit/amqp/isbn/settings.py        
 
-Konfigurace k alephu
-    [Documentation]    aleph_url
-    Has variable       aleph_url 
+Cesta k alephu
+    Variable presented     aleph_url 
 
-Konfigurace pro vstupní exchange v RabbitMQ
-    [Documentation]    Jméno exchange   
-    Has variable       input_exchange
+Vstupní exchange v RabbitMQ
+    [Documentation]     Jméno exchange, kam se posílají žádosti o validaci
+    Variable presented     input_exchange
 
-Konfigurace pro exchange v RabbitMQ pro odpovědi
-    [Documentation]    Jméno exchange
-    Has variable       result_exchange
+Exchange v RabbitMQ pro odpovědi
+    [Documentation]    Jméno exchange, kde se objevují výsledky validace
+    Variable presented    result_exchange

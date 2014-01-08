@@ -12,7 +12,7 @@ E-Deposit AMQP middleware pro ISBN
    requirements
    installation
    configuration
-
+   usage
 
 :download:`test report <../report.html>`
 
