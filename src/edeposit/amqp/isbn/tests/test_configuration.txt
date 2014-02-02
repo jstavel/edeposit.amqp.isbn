@@ -12,12 +12,12 @@ Konfigurační soubor
     Should Exist       src/edeposit/amqp/isbn/settings.py        
 
 Cesta k alephu
-    Variable presented     aleph_url 
+    Variable presented     ALEPH_URL 
 
 Vstupní exchange v RabbitMQ
     [Documentation]     Jméno exchange, kam se posílají žádosti o validaci
-    Variable presented     input_exchange
+    Variable presented     INPUT_EXCHANGE
 
 Exchange v RabbitMQ pro odpovědi
     [Documentation]    Jméno exchange, kde se objevují výsledky validace
-    Variable presented    result_exchange
+    Variable presented    RESULT_EXCHANGE
