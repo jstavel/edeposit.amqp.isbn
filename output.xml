@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20140108 15:29:00.469" generator="Robot 2.8.3 (Python 2.7.5+ on linux2)">
+<robot generated="20140202 16:35:13.875" generator="Robot 2.8.3 (Python 2.7.5+ on linux2)">
 <suite source="/home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/tests" id="s1" name="Tests">
 <suite source="/home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/tests/test_configuration.txt" id="s1-s1" name="Test Configuration">
 <test id="s1-s1-t1" name="Konfigurační soubor">
@@ -8,13 +8,13 @@
 <arguments>
 <arg>src/edeposit/amqp/isbn/settings.py</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.513" html="yes" level="INFO">Path '&lt;a href="file:///home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/settings.py"&gt;/home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/settings.py&lt;/a&gt;' exists</msg>
-<status status="PASS" endtime="20140108 15:29:00.513" starttime="20140108 15:29:00.513"></status>
+<msg timestamp="20140202 16:35:13.911" html="yes" level="INFO">Path '&lt;a href="file:///home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/settings.py"&gt;/home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/settings.py&lt;/a&gt;' exists</msg>
+<status status="PASS" endtime="20140202 16:35:13.911" starttime="20140202 16:35:13.911"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20140108 15:29:00.513" critical="yes" starttime="20140108 15:29:00.512"></status>
+<status status="PASS" endtime="20140202 16:35:13.911" critical="yes" starttime="20140202 16:35:13.910"></status>
 </test>
 <test id="s1-s1-t2" name="Cesta k alephu">
 <kw type="kw" name="inspector.PythonModule.Variable Presented">
@@ -22,12 +22,12 @@
 <arguments>
 <arg>aleph_url</arg>
 </arguments>
-<status status="PASS" endtime="20140108 15:29:00.514" starttime="20140108 15:29:00.514"></status>
+<status status="PASS" endtime="20140202 16:35:13.913" starttime="20140202 16:35:13.912"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20140108 15:29:00.514" critical="yes" starttime="20140108 15:29:00.513"></status>
+<status status="PASS" endtime="20140202 16:35:13.913" critical="yes" starttime="20140202 16:35:13.911"></status>
 </test>
 <test id="s1-s1-t3" name="Vstupní exchange v RabbitMQ">
 <kw type="kw" name="inspector.PythonModule.Variable Presented">
@@ -35,13 +35,13 @@
 <arguments>
 <arg>input_exchange</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.515" level="FAIL">AttributeError: 'module' object has no attribute 'input_exchange'</msg>
-<status status="FAIL" endtime="20140108 15:29:00.516" starttime="20140108 15:29:00.515"></status>
+<msg timestamp="20140202 16:35:13.914" level="FAIL">AttributeError: 'module' object has no attribute 'input_exchange'</msg>
+<status status="FAIL" endtime="20140202 16:35:13.914" starttime="20140202 16:35:13.913"></status>
 </kw>
 <doc>Jméno exchange, kam se posílají žádosti o validaci</doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20140108 15:29:00.516" critical="yes" starttime="20140108 15:29:00.515">AttributeError: 'module' object has no attribute 'input_exchange'</status>
+<status status="FAIL" endtime="20140202 16:35:13.914" critical="yes" starttime="20140202 16:35:13.913">AttributeError: 'module' object has no attribute 'input_exchange'</status>
 </test>
 <test id="s1-s1-t4" name="Exchange v RabbitMQ pro odpovědi">
 <kw type="kw" name="inspector.PythonModule.Variable Presented">
@@ -49,18 +49,18 @@
 <arguments>
 <arg>result_exchange</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.517" level="FAIL">AttributeError: 'module' object has no attribute 'result_exchange'</msg>
-<status status="FAIL" endtime="20140108 15:29:00.517" starttime="20140108 15:29:00.516"></status>
+<msg timestamp="20140202 16:35:13.915" level="FAIL">AttributeError: 'module' object has no attribute 'result_exchange'</msg>
+<status status="FAIL" endtime="20140202 16:35:13.915" starttime="20140202 16:35:13.915"></status>
 </kw>
 <doc>Jméno exchange, kde se objevují výsledky validace</doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20140108 15:29:00.517" critical="yes" starttime="20140108 15:29:00.516">AttributeError: 'module' object has no attribute 'result_exchange'</status>
+<status status="FAIL" endtime="20140202 16:35:13.915" critical="yes" starttime="20140202 16:35:13.914">AttributeError: 'module' object has no attribute 'result_exchange'</status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20140108 15:29:00.517" starttime="20140108 15:29:00.491"></status>
+<status status="FAIL" endtime="20140202 16:35:13.915" starttime="20140202 16:35:13.895"></status>
 </suite>
 <suite source="/home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/tests/test_input_message.txt" id="s1-s2" name="Test Input Message">
 <test id="s1-s2-t1" name="Konfigurace k alephu">
@@ -69,13 +69,13 @@
 <arguments>
 <arg>aleph_url</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.521" level="FAIL">No keyword with name 'Has variable' found.</msg>
-<status status="FAIL" endtime="20140108 15:29:00.521" starttime="20140108 15:29:00.521"></status>
+<msg timestamp="20140202 16:35:13.919" level="FAIL">No keyword with name 'Has variable' found.</msg>
+<status status="FAIL" endtime="20140202 16:35:13.919" starttime="20140202 16:35:13.919"></status>
 </kw>
 <doc>Konfigurace cesty k Alephu</doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20140108 15:29:00.522" critical="yes" starttime="20140108 15:29:00.521">No keyword with name 'Has variable' found.</status>
+<status status="FAIL" endtime="20140202 16:35:13.919" critical="yes" starttime="20140202 16:35:13.918">No keyword with name 'Has variable' found.</status>
 </test>
 <test id="s1-s2-t2" name="Konfigurace pro vstupní exchange v RabbitMQ">
 <kw type="kw" name="Has variable">
@@ -83,13 +83,13 @@
 <arguments>
 <arg>input_exchange</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.523" level="FAIL">No keyword with name 'Has variable' found.</msg>
-<status status="FAIL" endtime="20140108 15:29:00.523" starttime="20140108 15:29:00.523"></status>
+<msg timestamp="20140202 16:35:13.920" level="FAIL">No keyword with name 'Has variable' found.</msg>
+<status status="FAIL" endtime="20140202 16:35:13.920" starttime="20140202 16:35:13.920"></status>
 </kw>
 <doc>Jméno exchange, kam se budou posílat žádosti na validaci</doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20140108 15:29:00.523" critical="yes" starttime="20140108 15:29:00.522">No keyword with name 'Has variable' found.</status>
+<status status="FAIL" endtime="20140202 16:35:13.920" critical="yes" starttime="20140202 16:35:13.919">No keyword with name 'Has variable' found.</status>
 </test>
 <test id="s1-s2-t3" name="Konfigurace pro exchange v RabbitMQ pro odpovědi">
 <kw type="kw" name="Has variable">
@@ -97,19 +97,19 @@
 <arguments>
 <arg>result_exchange</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.524" level="FAIL">No keyword with name 'Has variable' found.</msg>
-<status status="FAIL" endtime="20140108 15:29:00.524" starttime="20140108 15:29:00.524"></status>
+<msg timestamp="20140202 16:35:13.921" level="FAIL">No keyword with name 'Has variable' found.</msg>
+<status status="FAIL" endtime="20140202 16:35:13.921" starttime="20140202 16:35:13.921"></status>
 </kw>
 <doc>Jméno exchange ve které se budou objevovat odpovědi</doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20140108 15:29:00.525" critical="yes" starttime="20140108 15:29:00.523">No keyword with name 'Has variable' found.</status>
+<status status="FAIL" endtime="20140202 16:35:13.921" critical="yes" starttime="20140202 16:35:13.920">No keyword with name 'Has variable' found.</status>
 </test>
 <doc></doc>
 <metadata>
 <item name="name">"vstupní AMQP zprávy"</item>
 </metadata>
-<status status="FAIL" endtime="20140108 15:29:00.525" starttime="20140108 15:29:00.518"></status>
+<status status="FAIL" endtime="20140202 16:35:13.922" starttime="20140202 16:35:13.916"></status>
 </suite>
 <suite source="/home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/tests/test_installation.txt" id="s1-s3" name="Test Installation">
 <test id="s1-s3-t1" name="PYPI repozitář">
@@ -118,20 +118,20 @@
 <arguments>
 <arg>${PACKAGE_URL}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.602" level="INFO">Host for next HTTP request set to 'pypi.python.org'</msg>
-<msg timestamp="20140108 15:29:00.602" level="INFO">Scheme for next HTTP request set to 'https'</msg>
-<msg timestamp="20140108 15:29:00.723" level="FAIL">Request should have succeeded, but was "404 Not Found ()".</msg>
-<status status="FAIL" endtime="20140108 15:29:00.723" starttime="20140108 15:29:00.601"></status>
+<msg timestamp="20140202 16:35:13.987" level="INFO">Host for next HTTP request set to 'pypi.python.org'</msg>
+<msg timestamp="20140202 16:35:13.987" level="INFO">Scheme for next HTTP request set to 'https'</msg>
+<msg timestamp="20140202 16:35:14.366" level="FAIL">Request should have succeeded, but was "404 Not Found ()".</msg>
+<status status="FAIL" endtime="20140202 16:35:14.367" starttime="20140202 16:35:13.986"></status>
 </kw>
 <doc>Existuje repozitář s balíčkem na adrese https://pypi.python.org/pypi/edeposit.amqp.isbn/</doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20140108 15:29:00.724" critical="yes" starttime="20140108 15:29:00.600">Request should have succeeded, but was "404 Not Found ()".</status>
+<status status="FAIL" endtime="20140202 16:35:14.368" critical="yes" starttime="20140202 16:35:13.986">Request should have succeeded, but was "404 Not Found ()".</status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20140108 15:29:00.724" starttime="20140108 15:29:00.526"></status>
+<status status="FAIL" endtime="20140202 16:35:14.370" starttime="20140202 16:35:13.922"></status>
 </suite>
 <suite source="/home/jan/work/edeposit.amqp.isbn/src/edeposit/amqp/isbn/tests/test_usage.txt" id="s1-s4" name="Test Usage">
 <test id="s1-s4-t1" name="Validace správného ISBN-10">
@@ -142,8 +142,8 @@
 <arg>process_isbn</arg>
 <arg>${ISBN-10-valid-01}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.792" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
-<status status="PASS" endtime="20140108 15:29:00.792" starttime="20140108 15:29:00.791"></status>
+<msg timestamp="20140202 16:35:14.461" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
+<status status="PASS" endtime="20140202 16:35:14.461" starttime="20140202 16:35:14.461"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Is Type Of">
 <doc></doc>
@@ -151,7 +151,7 @@
 <arg>${result}</arg>
 <arg>${edeposit.amqp.isbn.Result}</arg>
 </arguments>
-<status status="PASS" endtime="20140108 15:29:00.792" starttime="20140108 15:29:00.792"></status>
+<status status="PASS" endtime="20140202 16:35:14.462" starttime="20140202 16:35:14.462"></status>
 </kw>
 <kw type="kw" name="${result} = BuiltIn.Call Method">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -160,8 +160,8 @@
 <arg>process_isbn</arg>
 <arg>${ISBN-10-valid-02}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.793" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
-<status status="PASS" endtime="20140108 15:29:00.793" starttime="20140108 15:29:00.793"></status>
+<msg timestamp="20140202 16:35:14.462" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
+<status status="PASS" endtime="20140202 16:35:14.462" starttime="20140202 16:35:14.462"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Is Type Of">
 <doc></doc>
@@ -169,19 +169,19 @@
 <arg>${result}</arg>
 <arg>${edeposit.amqp.isbn.Result}</arg>
 </arguments>
-<status status="PASS" endtime="20140108 15:29:00.793" starttime="20140108 15:29:00.793"></status>
+<status status="PASS" endtime="20140202 16:35:14.463" starttime="20140202 16:35:14.463"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Isbn Is Valid">
 <doc></doc>
 <arguments>
 <arg>${result}</arg>
 </arguments>
-<status status="PASS" endtime="20140108 15:29:00.794" starttime="20140108 15:29:00.794"></status>
+<status status="PASS" endtime="20140202 16:35:14.463" starttime="20140202 16:35:14.463"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20140108 15:29:00.794" critical="yes" starttime="20140108 15:29:00.791"></status>
+<status status="PASS" endtime="20140202 16:35:14.463" critical="yes" starttime="20140202 16:35:14.460"></status>
 </test>
 <test id="s1-s4-t2" name="Validace chybného ISBN-10">
 <kw type="kw" name="${result} = BuiltIn.Call Method">
@@ -191,8 +191,8 @@
 <arg>process_isbn</arg>
 <arg>${ISBN-10-nonvalid-01}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.795" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
-<status status="PASS" endtime="20140108 15:29:00.795" starttime="20140108 15:29:00.795"></status>
+<msg timestamp="20140202 16:35:14.464" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
+<status status="PASS" endtime="20140202 16:35:14.464" starttime="20140202 16:35:14.464"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Is Type Of">
 <doc></doc>
@@ -200,20 +200,20 @@
 <arg>${result}</arg>
 <arg>${edeposit.amqp.isbn.Result}</arg>
 </arguments>
-<status status="PASS" endtime="20140108 15:29:00.796" starttime="20140108 15:29:00.795"></status>
+<status status="PASS" endtime="20140202 16:35:14.465" starttime="20140202 16:35:14.465"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Isbn Is Not Valid">
 <doc></doc>
 <arguments>
 <arg>${result}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.796" level="FAIL">attribute 'valid' must be False</msg>
-<status status="FAIL" endtime="20140108 15:29:00.796" starttime="20140108 15:29:00.796"></status>
+<msg timestamp="20140202 16:35:14.465" level="FAIL">attribute 'valid' must be False</msg>
+<status status="FAIL" endtime="20140202 16:35:14.465" starttime="20140202 16:35:14.465"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20140108 15:29:00.796" critical="yes" starttime="20140108 15:29:00.794">attribute 'valid' must be False</status>
+<status status="FAIL" endtime="20140202 16:35:14.465" critical="yes" starttime="20140202 16:35:14.464">attribute 'valid' must be False</status>
 </test>
 <test id="s1-s4-t3" name="Validace správného ISBN-13">
 <kw type="kw" name="${result} = BuiltIn.Call Method">
@@ -223,8 +223,8 @@
 <arg>process_isbn</arg>
 <arg>${ISBN-13-valid-01}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.797" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
-<status status="PASS" endtime="20140108 15:29:00.797" starttime="20140108 15:29:00.797"></status>
+<msg timestamp="20140202 16:35:14.466" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
+<status status="PASS" endtime="20140202 16:35:14.466" starttime="20140202 16:35:14.466"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Is Type Of">
 <doc></doc>
@@ -232,14 +232,14 @@
 <arg>${result}</arg>
 <arg>${edeposit.amqp.isbn.Result}</arg>
 </arguments>
-<status status="PASS" endtime="20140108 15:29:00.798" starttime="20140108 15:29:00.798"></status>
+<status status="PASS" endtime="20140202 16:35:14.467" starttime="20140202 16:35:14.467"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Isbn Is Valid">
 <doc></doc>
 <arguments>
 <arg>${result}</arg>
 </arguments>
-<status status="PASS" endtime="20140108 15:29:00.798" starttime="20140108 15:29:00.798"></status>
+<status status="PASS" endtime="20140202 16:35:14.467" starttime="20140202 16:35:14.467"></status>
 </kw>
 <kw type="kw" name="${result} = BuiltIn.Call Method">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -248,8 +248,8 @@
 <arg>process_isbn</arg>
 <arg>${ISBN-13-valid-02}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.799" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
-<status status="PASS" endtime="20140108 15:29:00.799" starttime="20140108 15:29:00.798"></status>
+<msg timestamp="20140202 16:35:14.468" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
+<status status="PASS" endtime="20140202 16:35:14.468" starttime="20140202 16:35:14.467"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Is Type Of">
 <doc></doc>
@@ -257,19 +257,19 @@
 <arg>${result}</arg>
 <arg>${edeposit.amqp.isbn.Result}</arg>
 </arguments>
-<status status="PASS" endtime="20140108 15:29:00.799" starttime="20140108 15:29:00.799"></status>
+<status status="PASS" endtime="20140202 16:35:14.468" starttime="20140202 16:35:14.468"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Isbn Is Valid">
 <doc></doc>
 <arguments>
 <arg>${result}</arg>
 </arguments>
-<status status="PASS" endtime="20140108 15:29:00.799" starttime="20140108 15:29:00.799"></status>
+<status status="PASS" endtime="20140202 16:35:14.468" starttime="20140202 16:35:14.468"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20140108 15:29:00.800" critical="yes" starttime="20140108 15:29:00.796"></status>
+<status status="PASS" endtime="20140202 16:35:14.469" critical="yes" starttime="20140202 16:35:14.466"></status>
 </test>
 <test id="s1-s4-t4" name="Validace chybného ISBN-13">
 <kw type="kw" name="${result} = BuiltIn.Call Method">
@@ -279,8 +279,8 @@
 <arg>process_isbn</arg>
 <arg>${ISBN-13-nonvalid-01}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.801" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
-<status status="PASS" endtime="20140108 15:29:00.801" starttime="20140108 15:29:00.800"></status>
+<msg timestamp="20140202 16:35:14.470" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
+<status status="PASS" endtime="20140202 16:35:14.470" starttime="20140202 16:35:14.469"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Is Type Of">
 <doc></doc>
@@ -288,20 +288,20 @@
 <arg>${result}</arg>
 <arg>${edeposit.amqp.isbn.Result}</arg>
 </arguments>
-<status status="PASS" endtime="20140108 15:29:00.801" starttime="20140108 15:29:00.801"></status>
+<status status="PASS" endtime="20140202 16:35:14.470" starttime="20140202 16:35:14.470"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Isbn Is Not Valid">
 <doc></doc>
 <arguments>
 <arg>${result}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.802" level="FAIL">attribute 'valid' must be False</msg>
-<status status="FAIL" endtime="20140108 15:29:00.802" starttime="20140108 15:29:00.801"></status>
+<msg timestamp="20140202 16:35:14.470" level="FAIL">attribute 'valid' must be False</msg>
+<status status="FAIL" endtime="20140202 16:35:14.470" starttime="20140202 16:35:14.470"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20140108 15:29:00.802" critical="yes" starttime="20140108 15:29:00.800">attribute 'valid' must be False</status>
+<status status="FAIL" endtime="20140202 16:35:14.471" critical="yes" starttime="20140202 16:35:14.469">attribute 'valid' must be False</status>
 </test>
 <test id="s1-s4-t5" name="Informace o producentovi v ISBN">
 <kw type="kw" name="${result} = BuiltIn.Call Method">
@@ -311,8 +311,8 @@
 <arg>process_isbn</arg>
 <arg>${ISBN-10-valid-01}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.803" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
-<status status="PASS" endtime="20140108 15:29:00.803" starttime="20140108 15:29:00.803"></status>
+<msg timestamp="20140202 16:35:14.472" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
+<status status="PASS" endtime="20140202 16:35:14.472" starttime="20140202 16:35:14.471"></status>
 </kw>
 <kw type="kw" name="${producent_info} = BuiltIn.Call Method">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -321,8 +321,8 @@
 <arg>producent_info</arg>
 <arg>${result}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.804" level="INFO">${producent_info} = None</msg>
-<status status="PASS" endtime="20140108 15:29:00.804" starttime="20140108 15:29:00.803"></status>
+<msg timestamp="20140202 16:35:14.472" level="INFO">${producent_info} = None</msg>
+<status status="PASS" endtime="20140202 16:35:14.472" starttime="20140202 16:35:14.472"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Is Type Of">
 <doc></doc>
@@ -330,13 +330,13 @@
 <arg>${producent_info}</arg>
 <arg>${edeposit.amqp.isbn.Producent}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.804" level="FAIL">wrong type</msg>
-<status status="FAIL" endtime="20140108 15:29:00.805" starttime="20140108 15:29:00.804"></status>
+<msg timestamp="20140202 16:35:14.473" level="FAIL">wrong type</msg>
+<status status="FAIL" endtime="20140202 16:35:14.473" starttime="20140202 16:35:14.472"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20140108 15:29:00.805" critical="yes" starttime="20140108 15:29:00.802">wrong type</status>
+<status status="FAIL" endtime="20140202 16:35:14.473" critical="yes" starttime="20140202 16:35:14.471">wrong type</status>
 </test>
 <test id="s1-s4-t6" name="Informace o publikaci">
 <kw type="kw" name="${result} = BuiltIn.Call Method">
@@ -346,8 +346,8 @@
 <arg>process_isbn</arg>
 <arg>${ISBN-10-valid-01}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.807" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
-<status status="PASS" endtime="20140108 15:29:00.807" starttime="20140108 15:29:00.806"></status>
+<msg timestamp="20140202 16:35:14.474" level="INFO">${result} = Result(valid=True, producent=None, publication=Publication(stream=''))</msg>
+<status status="PASS" endtime="20140202 16:35:14.474" starttime="20140202 16:35:14.474"></status>
 </kw>
 <kw type="kw" name="${publication_info} = BuiltIn.Call Method">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -356,8 +356,8 @@
 <arg>publication_info</arg>
 <arg>${result}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.809" level="INFO">${publication_info} = Publication(stream='')</msg>
-<status status="PASS" endtime="20140108 15:29:00.809" starttime="20140108 15:29:00.808"></status>
+<msg timestamp="20140202 16:35:14.474" level="INFO">${publication_info} = Publication(stream='')</msg>
+<status status="PASS" endtime="20140202 16:35:14.474" starttime="20140202 16:35:14.474"></status>
 </kw>
 <kw type="kw" name="inspector.PythonModule.Is Type Of">
 <doc></doc>
@@ -365,31 +365,31 @@
 <arg>${publication_info}</arg>
 <arg>${edeposit.amqp.isbn.Publication}</arg>
 </arguments>
-<status status="PASS" endtime="20140108 15:29:00.810" starttime="20140108 15:29:00.810"></status>
+<status status="PASS" endtime="20140202 16:35:14.475" starttime="20140202 16:35:14.475"></status>
 </kw>
 <kw type="kw" name="${root} = XML.Parse Xml">
 <doc>Parses the given XML file or string into an element structure.</doc>
 <arguments>
 <arg>${publication_info}</arg>
 </arguments>
-<msg timestamp="20140108 15:29:00.811" level="FAIL">TypeError: coercing to Unicode: need string or buffer, Publication found</msg>
-<status status="FAIL" endtime="20140108 15:29:00.811" starttime="20140108 15:29:00.811"></status>
+<msg timestamp="20140202 16:35:14.476" level="FAIL">TypeError: coercing to Unicode: need string or buffer, Publication found</msg>
+<status status="FAIL" endtime="20140202 16:35:14.476" starttime="20140202 16:35:14.475"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20140108 15:29:00.812" critical="yes" starttime="20140108 15:29:00.805">TypeError: coercing to Unicode: need string or buffer, Publication found</status>
+<status status="FAIL" endtime="20140202 16:35:14.477" critical="yes" starttime="20140202 16:35:14.473">TypeError: coercing to Unicode: need string or buffer, Publication found</status>
 </test>
 <doc></doc>
 <metadata>
 <item name="name">"Použití knihovny"</item>
 </metadata>
-<status status="FAIL" endtime="20140108 15:29:00.813" starttime="20140108 15:29:00.725"></status>
+<status status="FAIL" endtime="20140202 16:35:14.477" starttime="20140202 16:35:14.375"></status>
 </suite>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20140108 15:29:00.814" starttime="20140108 15:29:00.470"></status>
+<status status="FAIL" endtime="20140202 16:35:14.478" starttime="20140202 16:35:13.875"></status>
 </suite>
 <statistics>
 <total>
