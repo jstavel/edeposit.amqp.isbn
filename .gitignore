@@ -2,3 +2,4 @@
 *.egg
 _build
 build
+*.swp
