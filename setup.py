@@ -1,51 +1,54 @@
 from setuptools import setup, find_packages
-import os
 
-version = '0.1'
 
-long_description = (
-    open('README.md').read()
-    + '\n' +
-    'Contributors\n'
-    '============\n'
-    + '\n' +
-    open('CONTRIBUTORS.txt').read()
-    + '\n' +
+version = '0.2'
+long_description = "\n\n".join([
+    open('README.rst').read(),
+    open('CONTRIBUTORS.txt').read(),
     open('CHANGES.txt').read()
-    + '\n')
+])
 
-setup(name='edeposit.amqp.isbn',
-      version=version,
-      description="E-Deposit AMQP middleware for ISBN checking",
-      long_description=long_description,
-      # Get more strings from
-      # http://pypi.python.org/pypi?%3Aaction=list_classifiers
-      classifiers=[
-        "Programming Language :: Python",
+
+setup(
+    name='edeposit.amqp.isbn',
+    version=version,
+    description="E-Deposit AMQP middleware for ISBN checking",
+    long_description=long_description,
+
+    url='https://github.com/jstavel/edeposit.amqp.isbn',
+
+    author='Edeposit team',
+    author_email='edeposit@email.cz',
+
+    classifiers=[
+        "Programming Language :: Python :: 2.7",
+        "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
+        "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    license='GPLv2',
+
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
+
+    namespace_packages=[
+        'edeposit',
+        'edeposit.amqp'
+    ],
+    include_package_data=True,
+
+    zip_safe=False,
+    install_requires=[
+        'setuptools',
+        'pyisbn',
+    ],
+    extras_require={
+        "test": [
+            "unittest2",
+            "robotsuite",
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='https://github.com/jstavel/edeposit.amqp.isbn',
-      license='gpl',
-      packages=find_packages('src'),
-      package_dir = {'': 'src'},
-      namespace_packages=['edeposit', 'edeposit.amqp'],
-      include_package_data=True,
-      zip_safe=False,
-      install_requires=[
-          'setuptools',
-          # -*- Extra requirements: -*-
-          'pyisbn',
-      ],
-      extras_require={"test": [
-          "unittest2",
-          "robotsuite",
-      ], "docs": [
-          "sphinxcontrib-robotdoc",
-          "sphinx",
-      ]},
-      entry_points="""
-      # -*- Entry points: -*-
-      """,
-      )
+        "docs": [
+            "sphinxcontrib-robotdoc",
+            "sphinx",
+        ]
+    },
+)
