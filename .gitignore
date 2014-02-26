@@ -3,6 +3,10 @@
 _build
 build
 *.swp
+
 log.html
 output.xml
 report.html
+
+src/edeposit.amqp.aleph.egg-info
+dist
