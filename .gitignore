@@ -3,3 +3,6 @@
 _build
 build
 *.swp
+log.html
+output.xml
+report.html
