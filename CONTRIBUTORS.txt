@@ -1,1 +1,4 @@
+Contributors
+============
+
 - Jan Stavěl, Original Author, Maintainer
